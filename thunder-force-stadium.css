@@ -87,14 +87,14 @@ ul li {
     width: calc(100% / 4 - 10px);
 }
 
-ul li a {
+.navBar li a {
     padding: 10px 10px;
     text-decoration: 3px solid underline transparent;
     transition: all 0.2s ease-in-out;
 }
 
-ul li a:hover,
-ul li a:focus {
+.navBar li a:hover,
+.navBar li a:focus {
     text-decoration: 3px solid underline #9200ff;
 }
 
@@ -188,14 +188,38 @@ ul li a:focus {
 
 .moreInfo {
     background-color: #3d0369;
-    padding: 100px 0;
+    padding: 150px 0;
 }
 
 .iconContainer {
+    width: 70%;
     margin: 0 auto;
-    width: 75%;
-    text-align: center;
 }
+
+.iconContainer ul li {
+    width: calc(100% / 3 - 40px);
+    margin: 0 10px;
+}
+
+.icon a {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 10px 4px transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon a:hover,
+.icon a:focus {
+    text-shadow: 0px 10px 4px #0f0632;
+    font-size: 3rem;
+}
+
+.icon i {
+    display: block;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
 
 /* .icon {
     margin: 50px 20px;
