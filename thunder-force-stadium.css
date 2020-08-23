@@ -10,6 +10,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+
+
+/* general styling */
+
 html {
     font-size: 62.5%;
 }
@@ -37,21 +41,12 @@ ul {
     list-style-type: none;
 }
 
-header {
-    height: 100vh;
-    width: auto;
-    background-image: url(./assets/image-1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 50px 0;
-}
-
 h1,
 h2,
 h3,
 .readMore,
-.footerSect button {
+.footerSect button,
+.juno {
     font-family: 'Iceberg';
     text-transform: uppercase;
     font-weight: 500;
@@ -67,7 +62,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4.9rem;
+    font-size: 4.6rem;
 }
 
 h3 {
@@ -79,15 +74,29 @@ h3 {
     font-size: 2.4rem;
 }
 
+/* specific styling */
+
+/* header */
+
+header {
+    background-image: url(./assets/image-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0 100px;
+    min-height: 100vh;
+    width: auto;
+}
+
 nav ul {
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
     text-align: center;
 }
 
 ul li {
     float: left;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 600;
@@ -96,7 +105,7 @@ ul li {
 }
 
 .navBar li a {
-    padding: 10px 10px;
+    padding: 10px 0px;
     text-decoration: 3px solid underline transparent;
     transition: all 0.2s ease-in-out;
 }
@@ -107,7 +116,6 @@ ul li {
 }
 
 .hotCops {
-    width: 38%;
     margin: 40px auto;
     text-align: center;
 }
@@ -128,11 +136,27 @@ ul li {
     border: 4px solid #9200ff;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 20;
+  background-color: #9200ff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* Section 1 styling */
+
 .news {
     background-color: #0f0632;
 }
 
-/* TODO may want to come back and figure out better height props */
 .newsTiles {
     float: left;
     width: 50%;
@@ -172,6 +196,8 @@ ul li {
     height: 100%;
 }
 
+/* Section 2 styling */
+
 .tickets {
     clear: both;
     background-color: #08080b;
@@ -194,24 +220,27 @@ ul li {
     padding: 15px 0;
 }
 
+/* Section 3 styling */
+
 .moreInfo {
     background-color: #3d0369;
     padding: 150px 0;
 }
 
 .iconContainer {
-    width: 70%;
+    width: 55%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .iconContainer ul li {
-    width: calc(100% / 3 - 40px);
-    margin: 0 10px;
+    width: calc(100% / 3);
+    margin: 0;
 }
 
 .icon a {
     font-size: 2.6rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-shadow: 0px 10px 4px transparent;
     transition: all 0.3s ease-in-out;
 }
@@ -228,6 +257,8 @@ ul li {
     margin-bottom: 20px;
 }
 
+/* Section 4 styling */
+
 .instagram {
     background-color: #0f0632;
     padding: 100px 0;
@@ -242,11 +273,33 @@ ul li {
     width: calc(100% / 3 - 40px);
     margin: 0 20px;
     float: left;
+    position: relative;
+}
+
+.gramGal a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 35% 0;
+    background-color: #9200ff;
+    color: #fff;
+    font-size: 10rem;
+    transition: all .2s ease-in-out;
+}
+
+.gramGal a:hover,
+.gramGal a:focus {
+    opacity: 0.7;
 }
 
 .gramGal img {
     width: 100%;
 }
+
+/* Footer styling */
 
 footer {
     background-color: #3d0369;
@@ -263,7 +316,7 @@ footer {
     float: left;
 }
 
-/* The bekiw cide is used to hide the label for sighted users but keep it accessible. I have used this snippet before but originally saw it on w3.org re: Labeling controls. Thank you to editors ERIC EGGERT & SHADI ABOU-ZAHRA. */
+/* The below code (.hideThis styling) is used to hide the label for sighted users but keep it accessible. I have used this snippet before but originally saw it on w3.org re: Labeling controls. Thank you to editors ERIC EGGERT & SHADI ABOU-ZAHRA. */
 
 .hideThis {
   border: 0;
@@ -312,13 +365,29 @@ footer {
     color: #9200ff;
     border: 4px solid #9200ff;
     cursor: pointer;
-    margin-bottom: 2px;
 }
 
 .bottom {
     background-color: #0f0632;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.juno a {
+    display: block;
+    width: 50%;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-decoration: 3px solid underline #0f0632;
+    padding: 20px 20px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.juno a:hover,
+.juno a:focus {
+    letter-spacing: 4px;
+    text-decoration: 3px solid underline #9200ff;
 }
 
 

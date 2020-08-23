@@ -13,6 +13,7 @@
 <body>
     <header>
         <div class="wrapper">
+            <a href="#main" class="skip-link">Skip to main content</a>
             <nav>
                 <ul class="navBar clearfix">
                     <li><a href="#">home</a></li>
@@ -29,8 +30,7 @@
     </header>
 
 <!-- this is the main content on the page -->
-    <main>
-
+    <main id="main">
 <!-- this is the first section of main content -->
         <section class="news clearfix">
             <div class="newsTiles newsText">
@@ -95,12 +95,21 @@
 
                 <div class="gramGal">
                     <img src="./assets/image-2@2x.png" alt="A brightly lit concert venue">
+                    <div class="gramOverlay">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="gramGal">
                     <img src="./assets/gallery-image-2@2x.png" alt="A band playing music in a smoky concert venue">
+                    <div class="gramOverlay">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="gramGal">
                     <img src="./assets/gallery-image-3@2x.png" alt="Artisinal chicken wings">
+                    <div class="gramOverlay">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
         </section>
 
@@ -108,7 +117,7 @@
 
 <!-- end of the main section, begin the footer -->
     <footer>
-        <div class="wrapper clearfix">
+        <div class="wrapper">
             <div>
                 <nav>
                     <ul class="navBar clearfix">
@@ -136,6 +145,7 @@
             </div>
         </div>
         <div class="bottom">
+            <p class="juno"><a href="https://junocollege.com/">created at Juno College</a></p>
             <p>Copyright &copy; 2019 Juno College</p>
         </div>
     </footer>
