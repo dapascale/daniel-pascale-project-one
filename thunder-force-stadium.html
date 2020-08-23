@@ -89,25 +89,54 @@
 
 <!-- this is the fourth section -->
         <section class="instagram">
-            <h2>the gram</h2>
+            <div class="wrapper clearfix">
 
-            <img src="./assets/image-2@2x.png" alt="A brightly lit concert venue">
-            <img src="./assets/gallery-image-2@2x.png" alt="A band playing music in a smoky concert venue">
-            <img src="./assets/gallery-image-3@2x.png" alt="Artisinal chicken wings">
+                <h2>the gram</h2>
+
+                <div class="gramGal">
+                    <img src="./assets/image-2@2x.png" alt="A brightly lit concert venue">
+                </div>
+                <div class="gramGal">
+                    <img src="./assets/gallery-image-2@2x.png" alt="A band playing music in a smoky concert venue">
+                </div>
+                <div class="gramGal">
+                    <img src="./assets/gallery-image-3@2x.png" alt="Artisinal chicken wings">
+                </div>
         </section>
+
     </main>
 
 <!-- end of the main section, begin the footer -->
     <footer>
-        <div>
-            <h3>contact</h3>
-            <p>info@email.com 123 some road Toronto, ON A5A 5A5, Canada</p>
+        <div class="wrapper clearfix">
+            <div>
+                <nav>
+                    <ul class="navBar clearfix">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerMain clearfix">
+                <div class="footerSect">
+                    <h3>contact</h3>
+                    <p>info@email.com | 123-456-7890</p>
+                    <p>123 Some Road, Toronto, ON</p>
+                    <p>A5A 5A5, Canada</p>
+                </div>
+                <div class="footerSect">
+                    <h3>stay updated</h3>
+                    <p class="shrimpy">Subscribe to out newsletter to stay updated.</p>
+                    <input type="email" id="email" placeholder="email address" required>
+                    <label for="email" class="hideThis">email address</label>
+                    <button>subscribe</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>stay updated</h3>
-            <p>Subscribe to out newsletter to stay updated.</p>
-            <input type="email">
-            <button></button>
+        <div class="bottom">
+            <p>Copyright &copy; 2019 Juno College</p>
         </div>
     </footer>
 
