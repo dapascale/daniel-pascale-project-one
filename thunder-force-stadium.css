@@ -74,6 +74,14 @@ h3 {
     font-size: 2.4rem;
 }
 
+.fa-bars {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 5rem;
+    visibility: hidden;
+}
+
 /* specific styling */
 
 /* header */
@@ -96,7 +104,6 @@ nav ul {
 
 ul li {
     float: left;
-    /* text-align: center; */
     text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 600;
@@ -157,7 +164,13 @@ ul li {
     background-color: #0f0632;
 }
 
-.newsTiles {
+.newsTilesTop {
+    float: right;
+    width: 50%;
+    height: 580px;
+}
+
+.newsTilesBottom {
     float: left;
     width: 50%;
     height: 580px;
@@ -191,7 +204,8 @@ ul li {
     color: #9200ff;
 }
 
-.newsTiles img {
+.newsTilesTop img,
+.newsTilesBottom img {
     width: 100%;
     height: 100%;
 }
@@ -390,6 +404,265 @@ footer {
     text-decoration: 3px solid underline #9200ff;
 }
 
+@media (max-width: 1024px) {
+    .wrapper {
+        max-width: 1024px;
+    }
+
+    nav ul {
+        width: 45%;
+    }
+
+    .newsTilesTop,
+    .newsTilesBottom {
+        height: 512px;
+    }
+
+    .newsText {
+        padding: 100px 50px;
+    }
+
+    .newsText h2 {
+        font-size: 4rem;
+    }
+
+    .ticketImg img {
+        margin-top: 50px;
+    }
+
+    .iconContainer {
+        width: auto;
+    }
+
+    .gramGal a {
+        height: 267.2px;
+    }
+
+    .footerSect input {
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        max-width: 768px;
+    }
+
+    nav ul {
+        visibility: hidden;
+    }
+
+    .fa-bars {
+        visibility: visible;
+    }
+
+    h1 {
+        max-width: 40%;
+    }
+
+    .newsTilesTop,
+    .newsTilesBottom {
+        height: 384px;
+    }
+
+    .newsText {
+        padding: 40px 40px;
+    }
+
+    .newsText h2 {
+        font-size: 3rem;
+    }
+
+    .newsText p {
+        font-size: 1.5rem;
+    }
+
+    .tickets {
+        padding: 40px 0;
+    }
+
+    .ticketImg {
+        float: none;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .ticketImg img {
+        margin-top: 0px;
+        position: relative;
+        bottom: 400px;
+    }
+
+    .ticketText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gramGal a {
+        height: 190.4px;
+        padding: 25%;
+    }
+
+    footer nav ul {
+        visibility: visible;
+        width: auto;
+    }
+
+    .footerSect {
+        float: none;
+        margin: 0 auto 60px;
+        text-align: center;
+        width: auto;
+    }
+
+    .footerSect input,
+    .footerSect button {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .juno a{
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        max-width: 320px;
+    }
+
+    header {
+        background-size: 240%;
+        min-height: 320px;
+        padding: 20px 0px 40px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .fa-bars {
+        font-size: 3rem;
+        top: 5%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        margin: 100px auto 0;
+        max-width: 90%;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .hotCops {
+        margin: 20px auto;
+    }
+
+    .hotCops a {
+        font-size: 2rem;
+    }
+
+    .responsive {
+        height: 250px;
+    }
+
+    .newsTilesTop,
+    .newsTilesBottom {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .newsText {
+        padding: 40px 20px 20px;
+        line-height: 20px;
+    }
+
+    .readMore {
+        text-align: center;
+    }
+
+    .ticketImg img {
+        bottom: 0;
+    }
+
+    .ticketText {
+        text-align: left;
+    }
+
+    .moreInfo {
+        padding: 20px 0;
+    }
+
+    .iconContainer ul li {
+        float: none;
+        width: 100%;
+        margin: 60px auto;
+    }
+
+    .gramGal {
+        width: calc(100% / 2 - 10px);
+        margin: 0 5px;
+    }
+
+    .gramGal:last-child {
+        display: none;
+    }
+
+    .gramGal a {
+        height: 134px;
+        padding: 10%;
+    }
+
+    .instagram {
+        padding: 40px 0;
+    }
+
+    .instagram h2 {
+        margin-bottom: 40px;
+    }
+
+    footer nav ul li {
+        font-size: 1.2rem;
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .footerMain {
+        margin: 0;
+    }
+
+    .footerSect,
+    .footerSect p.shrimpy {
+        font-size: 1.2rem;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .footerSect input {
+        margin-top: 20px;
+    }
+
+    .footerSect input,
+    .footerSect button {
+        width: 100%;
+    }
+
+    .juno a {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
 
 
 /* TODO media queries and ADD HAMBURGER MENU  */
